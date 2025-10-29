@@ -22,8 +22,8 @@
 }
 
 .taskList {
-  flex-grow: 1; /* Κάνει τη λίστα να γεμίζει τον χώρο */
-  min-height: 100px; /* Ελάχιστο ύψος για να φαίνεται η περιοχή D&D */
+  flex-grow: 1; 
+  min-height: 100px; 
   padding: 0.5rem;
   background-color: #2f2f2f;
   border-radius: 4px;

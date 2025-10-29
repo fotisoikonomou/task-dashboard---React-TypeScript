@@ -3,7 +3,7 @@
 import { type Task} from '../../types/data.types';
 import styles from './TaskCard.module.css';
 
-// Ορίζουμε τι "props" περιμένει αυτό το component
+
 interface TaskCardProps {
   task: Task;
 }

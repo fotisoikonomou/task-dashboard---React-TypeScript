@@ -12,7 +12,7 @@ const Header = () => {
       <nav className={styles.nav}>
         <ul>
           <li>
-            {/* Αυτό το link θα είναι δυναμικό στο μέλλον */}
+         
             <NavLink 
               to="/board/1" 
               className={({ isActive }) => isActive ? styles.activeLink : ''}
