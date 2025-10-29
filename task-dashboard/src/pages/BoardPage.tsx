@@ -12,6 +12,7 @@ const BoardPage = () => {
   const { boardId } = useParams<{ boardId: string }>();
 
   const [boardData, setBoardData] = useState<BoardData>(mockData);
+ 
 
   return (
     <div className={styles.boardPage}>
