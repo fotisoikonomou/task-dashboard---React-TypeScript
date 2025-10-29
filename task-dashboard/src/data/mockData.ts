@@ -2,8 +2,7 @@
 
 import { type BoardData } from '../types/data.types';
 
-// Αυτά είναι τα δεδομένα που θα χρησιμοποιήσει η εφαρμογή μας
-// μέχρι να συνδέσουμε backend.
+
 export const mockData: BoardData = {
   tasks: {
     'task-1': { id: 'task-1', content: 'Set up the project structure' },
@@ -31,6 +30,6 @@ export const mockData: BoardData = {
       taskIds: ['task-6', 'task-7'],
     },
   },
-  // Η σειρά με την οποία θα εμφανίζονται οι στήλες
+  
   columnOrder: ['column-1', 'column-2', 'column-3'],
 };
