@@ -6,7 +6,7 @@ import styles from './Column.module.css';
 
 interface ColumnProps {
   column: ColumnType;
-  tasks: TaskType[]; // Μια λίστα με τα *πλήρη αντικείμενα* Task
+  tasks: TaskType[]; 
 }
 
 const Column = ({ column, tasks }: ColumnProps) => {
