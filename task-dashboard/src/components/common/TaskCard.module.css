@@ -1,0 +1,12 @@
+/* src/components/TaskCard/TaskCard.module.css */
+
+.taskCardContainer {
+  background-color: #3a3a3a;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+}

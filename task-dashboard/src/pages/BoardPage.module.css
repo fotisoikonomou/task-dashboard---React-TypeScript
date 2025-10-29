@@ -1,0 +1,31 @@
+/* src/pages/BoardPage.module.css */
+
+.boardPage {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 65px); /* 100% ύψος μείον το ύψος του Header */
+  overflow-x: auto; /* Επιτρέπει το οριζόντιο scroll αν οι στήλες δεν χωράνε */
+  padding: 1.5rem;
+}
+
+.boardHeader {
+  text-align: left;
+  margin-bottom: 2rem;
+  padding: 0 1rem;
+}
+
+.boardHeader h1 {
+  margin: 0;
+}
+
+.boardHeader p {
+  margin: 0.2rem 0 0;
+  color: #aaa;
+}
+
+.boardCanvas {
+  flex-grow: 1;
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start; /* Στοιχίζει τις στήλες στην κορυφή */
+}

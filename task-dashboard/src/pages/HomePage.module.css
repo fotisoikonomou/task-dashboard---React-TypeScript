@@ -1,0 +1,38 @@
+/* src/pages/HomePage.module.css */
+
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px); /* Υπολογίζει το ύψος μείον το header/padding */
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #dfdfdf;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #a0a0a0;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.ctaButton {
+  background-color: #646cff;
+  color: white;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.25s;
+}
+
+.ctaButton:hover {
+  background-color: #535bf2;
+}

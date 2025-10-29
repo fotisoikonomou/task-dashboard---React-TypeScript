@@ -1,0 +1,30 @@
+/* src/components/Column/Column.module.css */
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #282828;
+  border: 1px solid #444;
+  border-radius: 8px;
+  width: 300px;
+  min-height: 400px;
+  padding: 1rem;
+}
+
+.columnTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #e0e0e0;
+  margin: 0 0 1rem 0;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #555;
+}
+
+.taskList {
+  flex-grow: 1; /* Κάνει τη λίστα να γεμίζει τον χώρο */
+  min-height: 100px; /* Ελάχιστο ύψος για να φαίνεται η περιοχή D&D */
+  padding: 0.5rem;
+  background-color: #2f2f2f;
+  border-radius: 4px;
+}
