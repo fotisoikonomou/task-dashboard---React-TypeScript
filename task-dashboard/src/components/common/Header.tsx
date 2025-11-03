@@ -21,12 +21,12 @@ const Header = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink 
+            {/* <NavLink 
               to="/login" 
               className={({ isActive }) => isActive ? styles.activeLink : ''}
             >
               Login
-            </NavLink>
+            </NavLink> */}
           </li>
         </ul>
       </nav>

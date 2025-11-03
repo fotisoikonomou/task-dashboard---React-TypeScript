@@ -1,0 +1,38 @@
+/* src/components/AddTaskForm/AddTaskForm.module.css */
+
+.addTaskForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.taskInput {
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box; 
+  border-radius: 4px;
+  border: 1px solid #555;
+  background-color: #3a3a3a;
+  color: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.taskInput::placeholder {
+  color: #999;
+}
+
+.addButton {
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #357abd;
+}

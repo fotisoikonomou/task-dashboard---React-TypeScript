@@ -13,6 +13,22 @@ const BoardPage = () => {
 
   const [boardData, setBoardData] = useState<BoardData>(mockData);
  
+const handleAddTask = (content: string, columnId: string) => {
+    const newTaskId = `task-${new Date().getTime()}`;
+    const newTask = { id: newTaskId, content: content };
+
+    setBoardData(prevData => {
+      const newTasks = { ...prevData.tasks, [newTaskId]: newTask };
+      const column = prevData.columns[columnId];
+      const newTaskIds = [...column.taskIds, newTaskId];
+      const newColumn = { ...column, taskIds: newTaskIds };
+      return {
+        ...prevData,
+        tasks: newTasks,
+        columns: { ...prevData.columns, [columnId]: newColumn },
+      };
+    });
+  };
 
   return (
     <div className={styles.boardPage}>
@@ -28,8 +44,9 @@ const BoardPage = () => {
       
           const tasks = column.taskIds.map(taskId => boardData.tasks[taskId]);
 
-         
-          return <Column key={column.id} column={column} tasks={tasks} />;
+
+
+          return <Column key={column.id} column={column} tasks={tasks} onAddTask={(content) => handleAddTask(content, column.id)} />;
         })}
       </div>
     </div>
