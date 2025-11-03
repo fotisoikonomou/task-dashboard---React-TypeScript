@@ -1,6 +1,6 @@
  # Task Dashboard
 
-  A React-based project management dashboard featuring a drag-and-drop interface for managing tasks across different columns.
+  A React-based project management dashboard featuring a drag-and-drop interface for managing tasks across different columns. It can easily be expanded to save items in a DB management system or local storage. This project is a base for anyone who wants to build something similar.
 
   ## Features
 
